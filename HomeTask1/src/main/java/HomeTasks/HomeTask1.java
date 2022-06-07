@@ -17,28 +17,21 @@ import Products.Product;
 public class HomeTask1 {
     public static void main(String[] args) throws IOException {
 
-        int numberOrders = 10;
+        int numberOrders = 100;
 
         //Create varied List of Addresses
         List<Address> addressList = new ArrayList<>();
 
-        List<String> cities = new ArrayList<>();
-        cities.add("Moscow");
-        cities.add("Vladivistok");
-        cities.add("Kazan");
-
-        List<String> streets = new ArrayList<>();
-        streets.add("Sovetskai");
-        streets.add("Pervomaiski");
-        streets.add("Lenina");
+        String[] cities = {"Moscow","Vladivistok","Kazan"};
+        String[] streets = {"Sovetskai","Pervomaiski","Lenina"};
 
 
         for (int i = 0; i < numberOrders; i++) {
             int randomHouseNumber = (int)(Math.random()*100);
             int randomFloorNumber = (int)(Math.random()*15);
             int randomApartmentNumber = (int)(Math.random()*150);
-            String city = cities.get((int)(Math.random()*3));
-            String street = streets.get((int)(Math.random()*3));
+            String city = cities[(int)(Math.random()*3)];
+            String street = streets[(int)(Math.random()*3)];
             Address address = new Address("Russia", city, street,randomHouseNumber,randomFloorNumber,randomApartmentNumber);
             addressList.add(address);
         }
@@ -47,27 +40,23 @@ public class HomeTask1 {
         List<Apple> appleList = new ArrayList<>();
         List<Orange> orangeList = new ArrayList<>();
 
-        List<String> colors = new ArrayList<>();
-        colors.add("red");
-        colors.add("green");
+        String[] colors = {"red","green"};
 
-        List<Boolean> isWithBones = new ArrayList<>();
-        isWithBones.add(true);
-        isWithBones.add(false);
+        Boolean[] isWithBones = {true,false};
 
 
         for (int i = 0; i < numberOrders; i++) {
             int randomPriceApple = (int)(Math.random()*1000);
             int randomWeightApple = (int)(Math.random()*1000);
 
-            String color = colors.get((int)(Math.random()*2));
+            String color = colors[(int)(Math.random()*2)];
             Apple apple = new Apple(randomPriceApple,"apple",randomWeightApple, color);
             appleList.add(apple);
 
             int randomPriceOrange = (int)(Math.random()*1000);
             int randomWeightOrange = (int)(Math.random()*1000);
 
-            Boolean withBones = isWithBones.get((int)(Math.random()*2));
+            Boolean withBones = isWithBones[(int)(Math.random()*2)];
             Orange orange = new Orange(randomPriceOrange,"Orange",randomWeightOrange, withBones);
             orangeList.add(orange);
         }
