@@ -1,0 +1,26 @@
+<Office>
+    <address>
+        <country>Russia</country>
+        <city>Novosibirsk</city>
+        <street>South street</street>
+        <numberOfHouse>40</numberOfHouse>
+        <numberOfFloor>3</numberOfFloor>
+        <numberOfFlat>41</numberOfFlat>
+    </address>
+    <Employee>
+        <id>1</id>
+        <name>Max</name>
+        <surname>Volkov</surname>
+        <patronymic>Sergeevisch</patronymic>
+        <age>27</age>
+        <workExperience>true</workExperience>
+    </Employee>
+    <Employee>
+        <id>2</id>
+        <name>Mike</name>
+        <surname>Taison</surname>
+        <patronymic>Sergeevisch</patronymic>
+        <age>22</age>
+        <workExperience>false</workExperience>
+    </Employee>
+</Office>

@@ -1,0 +1,8 @@
+<Employee>
+    <id>1</id>
+    <name>Max</name>
+    <surname>Volkov</surname>
+    <patronymic>Sergeevisch</patronymic>
+    <age>27</age>
+    <workExperience>true</workExperience>
+</Employee>
