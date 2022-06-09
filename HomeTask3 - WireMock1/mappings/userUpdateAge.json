@@ -1,0 +1,10 @@
+{
+    "request": {
+        "urlPathPattern": "/user/([a-z]*)/update_age",
+        "method": "PATCH"
+    },
+    "response": {
+        "status": 200,
+  "bodyFileName": "userUpdateAge.json"
+    }
+}

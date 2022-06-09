@@ -1,0 +1,18 @@
+{
+    "request": {
+        "urlPathPattern": "/user/update/age",
+		"queryParameters": {
+            "name": {
+                "matches": "[a-zA-Z0-9]*"
+            },
+			"age": {
+                "matches": "[0-9]*"
+            }
+        },
+        "method": "PATCH"
+    },
+    "response": {
+        "status": 200,
+		"jsonBody": "User {{request.query.name}} have new age = {{request.query.age}}!"
+    }
+}

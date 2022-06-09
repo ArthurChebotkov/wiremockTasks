@@ -1,0 +1,15 @@
+{
+    "request": {
+        "urlPathPattern": "/user/create",
+		"queryParameters": {
+            "name": {
+                "matches": "[a-zA-Z0-9]*"
+            }
+        },
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+		"jsonBody": "User {{request.query.name}} was created!"
+    }
+}

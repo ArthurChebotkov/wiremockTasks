@@ -1,0 +1,15 @@
+{
+    "request": {
+        "urlPathPattern": "/user/delete",
+		"queryParameters": {
+            "name": {
+                "matches": "[a-zA-Z0-9]*"
+            }
+        },
+        "method": "DELETE"
+    },
+    "response": {
+        "status": 200,
+		"jsonBody": "User {{request.query.name}} was deleted"
+    }
+}

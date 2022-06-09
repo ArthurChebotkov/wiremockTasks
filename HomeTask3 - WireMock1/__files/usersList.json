@@ -1,0 +1,16 @@
+{
+ [
+  {
+   "name": "Max",
+   "surname": "Lunin",
+   "age": 15,
+   "canDrive" false
+  },
+  {
+   "name": "Anna",
+   "surname": "Saharova",
+   "age": 25,
+   "canDrive" true
+  }
+ ]
+}

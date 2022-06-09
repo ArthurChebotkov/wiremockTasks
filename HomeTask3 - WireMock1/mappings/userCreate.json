@@ -1,0 +1,10 @@
+{
+    "request": {
+        "urlPathPattern": "/user/create/([a-z]*)",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+  "bodyFileName": "userCreate.json"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "request": {
+        "urlPathPattern": "/user/([a-z]*)/delete",
+        "method": "DELETE"
+    },
+    "response": {
+        "status": 200,
+  "bodyFileName": "userDelete.json"
+    }
+}
