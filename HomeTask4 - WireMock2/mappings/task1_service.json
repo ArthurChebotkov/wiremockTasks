@@ -1,0 +1,11 @@
+{
+    "request": {
+        "urlPathPattern": "/service/([a-zA-Z0-9_,\/]+)",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+		"jsonBody": "Everything was just fine!"
+    }
+}
+

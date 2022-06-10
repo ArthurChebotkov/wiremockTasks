@@ -1,0 +1,18 @@
+{
+    "request": {
+        "urlPathPattern": "/",
+        "method": "GET",
+    "bodyPatterns" : [
+      {
+        "matchesJsonPath": "$[?(@.error_code=~/123/)]"
+      },
+      {
+        "matchesJsonPath": "$[?(@.description=~/Division by zero/)]"
+      }
+    ]
+    },
+    "response": {
+        "status": 200,
+		"jsonBody": "Everything was just fine!"
+    }
+}

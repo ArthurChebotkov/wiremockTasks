@@ -1,0 +1,24 @@
+{
+    "request": {
+        "urlPathPattern": "/userslist",
+        "method": "GET",
+    "bodyPatterns" : [
+      {
+        "matchesJsonPath": {
+          "expression": "$.length($.users[?(@.name=~/user[0-9]*/)].length())",
+          "equalTo": "2"
+        }
+      },
+      {
+        "matchesJsonPath": {
+          "expression": "$.users.size()",
+          "equalTo": "2"
+        }
+      }
+    ]
+    },
+    "response": {
+        "status": 200,
+		"jsonBody": "Everything was just fine!"
+    }
+}

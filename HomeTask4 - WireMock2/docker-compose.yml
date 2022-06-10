@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+
+  wiremock-service:
+    image: wiremock/wiremock:2.33.1
+    ports:
+      - "8080:8080"
+    command:
+      - "--global-response-templating"
+    volumes:
+      - .:/home/wiremock

@@ -1,0 +1,13 @@
+{
+    "request": {
+        "urlPathPattern": "/number",
+        "method": "GET",
+    "bodyPatterns" : [ {
+      "matchesJsonPath": "$[?(@.telephone_number=~/\\+7[0-9]{10}/)]"
+    }]
+    },
+    "response": {
+        "status": 200,
+		"jsonBody": "Everything was just fine!"
+    }
+}
