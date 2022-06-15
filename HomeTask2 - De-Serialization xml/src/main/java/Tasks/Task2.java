@@ -34,6 +34,7 @@ public class Task2 {
         FileWriter fileWriter = new FileWriter("src/office.xml");
         ObjectMapper objectMapper = new XmlMapper();
         objectMapper.writeValue(fileWriter, office);
+
         FileReader fileReader = new FileReader("src/office.xml");
         office = objectMapper.readValue(fileReader, Office.class);
         System.out.println(office.toString());

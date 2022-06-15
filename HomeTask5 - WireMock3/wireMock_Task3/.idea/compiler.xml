@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HomeTask1" />
-        <module name="HomeTask1 - De-Serialization json" />
-        <module name="L2" />
-        <module name="wiremockTasks" />
+        <module name="wireMock_Task3" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="wireMock_Task3" options="" />
+    </option>
   </component>
 </project>

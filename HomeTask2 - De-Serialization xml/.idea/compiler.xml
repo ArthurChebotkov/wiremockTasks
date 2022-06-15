@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HomeTask2" />
+        <module name="HomeTask2 - De-Serialization xml" />
       </profile>
     </annotationProcessing>
   </component>
